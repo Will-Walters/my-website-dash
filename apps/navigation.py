@@ -25,13 +25,13 @@ navbar = dbc.Navbar(
             ),
             dbc.DropdownMenu(
                 children=[
-                    dbc.DropdownMenuItem("Other Stuff", header=True),
-                    dbc.DropdownMenuItem("Page 2", href="#"),
-                    dbc.DropdownMenuItem("Page 3", href="#"),
+                    dbc.DropdownMenuItem("About Me", header=True),
+                    dbc.DropdownMenuItem("Bio", href="/bio"),
+                    dbc.DropdownMenuItem("Photos", href="/myphotos"),
                 ],
                 nav=True,
                 in_navbar=True,
-                label="Other Stuff",
+                label="About Me",
             ),
         ])
     ],

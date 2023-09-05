@@ -2,12 +2,12 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html
 
-app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.CYBORG, dbc.icons.BOOTSTRAP],
+app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.COSMO, dbc.icons.BOOTSTRAP],
                 suppress_callback_exceptions=True )
 
 server = app.server
 
-app.layout = html.Div([
+app.layout = html.Div(style={'backgroundColor':'white'},children=[
     dash.page_container
 ])
 
